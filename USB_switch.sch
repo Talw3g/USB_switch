@@ -55,7 +55,6 @@ F 5 "1MS1T1B5M1QE" H 2200 3200 50  0001 C CNN "Ref"
 	1    2200 3200
 	-1   0    0    1   
 $EndComp
-NoConn ~ 2000 3300
 Wire Wire Line
 	2000 3100 1750 3100
 Wire Wire Line
@@ -94,8 +93,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 4500 3500 4550
 Connection ~ 3500 4500
-Wire Wire Line
-	4000 3500 4550 3500
 Connection ~ 4000 3500
 Wire Wire Line
 	4000 3500 4000 3600
@@ -110,53 +107,18 @@ F 3 "" H 4000 2600 50  0001 C CNN
 	1    4000 2600
 	-1   0    0    1   
 $EndComp
-$Comp
-L pads:WirePad W2
-U 1 1 5BDF9C8C
-P 4850 3500
-F 0 "W2" V 4772 3385 50  0000 R CNN
-F 1 "Vout" V 4950 3450 50  0000 R CNN
-F 2 "Pads:wirepad_hole_2.2x1mm" H 4850 3500 50  0001 C CNN
-F 3 "" H 4850 3500 50  0001 C CNN
-	1    4850 3500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2950 3200 3700 3200
 $Comp
-L pads:WirePad W3
-U 1 1 5BDFA0F9
-P 6700 2800
-F 0 "W3" V 6485 2731 50  0000 C CNN
-F 1 "GND" V 6576 2731 50  0000 C CNN
-F 2 "Pads:wirepad_hole_2.2x1mm" H 6700 2800 50  0001 C CNN
-F 3 "" H 6700 2800 50  0001 C CNN
-	1    6700 2800
-	0    1    1    0   
-$EndComp
-$Comp
 L pads:WirePad W6
 U 1 1 5BDFA250
-P 7500 2800
-F 0 "W6" V 7546 2623 50  0000 R CNN
-F 1 "GND" V 7455 2623 50  0000 R CNN
-F 2 "Pads:wirepad_hole_2.2x1mm" H 7500 2800 50  0001 C CNN
-F 3 "" H 7500 2800 50  0001 C CNN
-	1    7500 2800
+P 7500 3850
+F 0 "W6" V 7546 3673 50  0000 R CNN
+F 1 "GND" V 7455 3673 50  0000 R CNN
+F 2 "Pads:wirepad_hole_2.2x1mm" H 7500 3850 50  0001 C CNN
+F 3 "" H 7500 3850 50  0001 C CNN
+	1    7500 3850
 	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6700 2800 7150 2800
-$Comp
-L pads:WirePad W4
-U 1 1 5BDFA3F1
-P 6700 3350
-F 0 "W4" V 6485 3281 50  0000 C CNN
-F 1 "D+" V 6576 3281 50  0000 C CNN
-F 2 "Pads:wirepad_hole_2.2x1mm" H 6700 3350 50  0001 C CNN
-F 3 "" H 6700 3350 50  0001 C CNN
-	1    6700 3350
-	0    1    1    0   
 $EndComp
 $Comp
 L pads:WirePad W7
@@ -170,37 +132,24 @@ F 3 "" H 7500 3350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pads:WirePad W5
-U 1 1 5BDFA4CB
-P 6700 3700
-F 0 "W5" V 6485 3631 50  0000 C CNN
-F 1 "D-" V 6576 3631 50  0000 C CNN
-F 2 "Pads:wirepad_hole_2.2x1mm" H 6700 3700 50  0001 C CNN
-F 3 "" H 6700 3700 50  0001 C CNN
-	1    6700 3700
-	0    1    1    0   
-$EndComp
-$Comp
 L pads:WirePad W8
 U 1 1 5BDFA513
-P 7500 3700
-F 0 "W8" V 7546 3523 50  0000 R CNN
-F 1 "D-" V 7455 3523 50  0000 R CNN
-F 2 "Pads:wirepad_hole_2.2x1mm" H 7500 3700 50  0001 C CNN
-F 3 "" H 7500 3700 50  0001 C CNN
-	1    7500 3700
+P 7500 3650
+F 0 "W8" V 7546 3473 50  0000 R CNN
+F 1 "D-" V 7455 3473 50  0000 R CNN
+F 2 "Pads:wirepad_hole_2.2x1mm" H 7500 3650 50  0001 C CNN
+F 3 "" H 7500 3650 50  0001 C CNN
+	1    7500 3650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6700 3350 7500 3350
 Wire Wire Line
-	6700 3700 7500 3700
+	6700 3650 7500 3650
 Wire Wire Line
 	4000 2600 4000 2650
 Wire Wire Line
 	1750 3100 1750 2650
-Wire Wire Line
-	1750 2650 4000 2650
 Connection ~ 4000 2650
 Wire Wire Line
 	4000 2650 4000 3000
@@ -246,7 +195,7 @@ Wire Wire Line
 	4550 3650 4550 3500
 Connection ~ 4550 3500
 Wire Wire Line
-	4550 3500 4850 3500
+	4550 3500 4800 3500
 Wire Wire Line
 	4550 3950 4550 4000
 Wire Wire Line
@@ -277,19 +226,108 @@ F 3 "" H 4550 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5BE18B5C
-P 7150 2950
-F 0 "#PWR?" H 7150 2700 50  0001 C CNN
-F 1 "GND" H 7155 2777 50  0000 C CNN
-F 2 "" H 7150 2950 50  0001 C CNN
-F 3 "" H 7150 2950 50  0001 C CNN
-	1    7150 2950
+P 6300 4000
+F 0 "#PWR0102" H 6300 3750 50  0001 C CNN
+F 1 "GND" H 6305 3827 50  0000 C CNN
+F 2 "" H 6300 4000 50  0001 C CNN
+F 3 "" H 6300 4000 50  0001 C CNN
+	1    6300 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 2950 7150 2800
-Connection ~ 7150 2800
+	6300 4000 6300 3850
 Wire Wire Line
-	7150 2800 7500 2800
+	6300 3850 7500 3850
+$Comp
+L pads:WirePad W12
+U 1 1 5BE1974B
+P 7500 4300
+F 0 "W12" V 7546 4123 50  0000 R CNN
+F 1 "SHLD" V 7455 4123 50  0000 R CNN
+F 2 "Pads:wirepad_SMD_2.2x4mm" H 7500 4300 50  0001 C CNN
+F 3 "" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4300 7500 4300
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5BE19D84
+P 2250 5900
+F 0 "H1" H 2350 5946 50  0000 L CNN
+F 1 "MountingHole" H 2350 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 2250 5900 50  0001 C CNN
+F 3 "~" H 2250 5900 50  0001 C CNN
+	1    2250 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5BE1A026
+P 3100 5900
+F 0 "H2" H 3200 5946 50  0000 L CNN
+F 1 "MountingHole" H 3200 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 3100 5900 50  0001 C CNN
+F 3 "~" H 3100 5900 50  0001 C CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3300 1900 3300
+Wire Wire Line
+	1900 3300 1900 4500
+Wire Wire Line
+	1900 4500 2950 4500
+Connection ~ 2950 4500
+$Comp
+L Connector:USB_A J1
+U 1 1 5BE1CA77
+P 6300 3450
+F 0 "J1" H 6355 3917 50  0000 C CNN
+F 1 "USB_A" H 6355 3826 50  0000 C CNN
+F 2 "Connectors_custom:USB_A_Receptacle_Horizontal" H 6450 3400 50  0001 C CNN
+F 3 " ~" H 6450 3400 50  0001 C CNN
+F 4 "1642033" H 6300 3450 50  0001 C CNN "Farnell"
+F 5 "61400416021" H 6300 3450 50  0001 C CNN "Ref"
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3650 6700 3550
+Wire Wire Line
+	6700 3550 6600 3550
+Wire Wire Line
+	6700 3350 6700 3450
+Wire Wire Line
+	6700 3450 6600 3450
+Connection ~ 6300 3850
+Wire Wire Line
+	6200 4300 6200 3850
+Text GLabel 6600 3250 2    50   Input ~ 0
+Vout
+Text GLabel 5100 3350 1    50   Output ~ 0
+Vout
+Wire Wire Line
+	5100 3350 5100 3500
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5BE2C45D
+P 4800 3500
+F 0 "#FLG0102" H 4800 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 3674 50  0000 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "~" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2650 4000 2650
+Connection ~ 4800 3500
+Wire Wire Line
+	4800 3500 5100 3500
+Wire Wire Line
+	4000 3500 4550 3500
 $EndSCHEMATC
