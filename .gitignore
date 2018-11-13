@@ -3,3 +3,6 @@
 ~$*
 _save*
 _autosave*
+*.ods
+*.csv
+*.xml
